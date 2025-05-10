@@ -23,6 +23,14 @@ public class PlatformMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.position.y > transform.position.y)
+        {
+            collision.transform.SetParent(transform);
+        }
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         MovePlatformUp();
@@ -31,6 +39,7 @@ public class PlatformMovement : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         platformMoving = false;
+        collision.transform.SetParent(null);
     }
 
     public void MovePlatformUp()

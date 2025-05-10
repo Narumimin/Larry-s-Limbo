@@ -20,7 +20,7 @@ public class Angels : MonoBehaviour
     {
         shooting = true;
         StartCoroutine(ShootingAngel());
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         shooting = false;
     }
     public IEnumerator ShootingAngel()

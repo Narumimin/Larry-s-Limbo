@@ -4,11 +4,14 @@ using System.Collections;
 public class HandSpikes : MonoBehaviour
 {
     private BoxCollider2D BoxCollider2D;
+    private SpriteRenderer SpriteRenderer;
     private bool spikesUp = false;
 
     private void Start()
     {
         BoxCollider2D = GetComponent<BoxCollider2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        SpriteRenderer.enabled = false;
     }
 
     private void Update()
@@ -35,8 +38,10 @@ public class HandSpikes : MonoBehaviour
     {
         spikesUp = true;
         BoxCollider2D.enabled = true;
+        SpriteRenderer.enabled = true;
         yield return new WaitForSeconds(1);
         BoxCollider2D.enabled = false;
+        SpriteRenderer.enabled = false;
         yield return new WaitForSeconds(1);
         spikesUp = false;
         
