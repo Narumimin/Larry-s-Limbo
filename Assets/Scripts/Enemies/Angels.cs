@@ -5,7 +5,7 @@ public class Angels : MonoBehaviour
 {
     public int speed = 3;
     public GameObject BEAM;
-    public bool shooting = false;
+    private bool shooting = false;
 
     public void Update()
     {

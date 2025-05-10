@@ -2,18 +2,19 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int health;
+    public int maxHealth = 3; // vida total
+    public int health; // vida actual
 
-    private bool takingDamage = false;
+    private bool takingDamage = false; //verificar si esta tomando daño pal cooldown de daño
 
     private PlayerMovement Player;
     public GameObject deathPannel;
 
-    [SerializeField] private Image[] hearts;
+    [SerializeField] private Image[] hearts; // pa los corazones meanwhile
     
 
 
@@ -21,7 +22,7 @@ public class HealthController : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>(); // encontrar el game object que es larry
     }
 
     public void TakeDamage(int damage)
@@ -30,7 +31,7 @@ public class HealthController : MonoBehaviour
         {
             health -= damage;
             StartCoroutine(DamageCooldown());
-            for (int i = 0; i < hearts.Length; i++)
+            for (int i = 0; i < hearts.Length; i++) // para cambiar el color de corazones
             {
                 if (i < health)
                 {
@@ -55,11 +56,21 @@ public class HealthController : MonoBehaviour
         takingDamage = false;
     }
 
-    private void Death()
+    private void Death() // se explica solo XD
     {
         deathPannel.SetActive(true);
-        Player.velocity = 0;
-        Player.jumpVel = 0;
+        Player.enabled = false;
     }
 
+    public void Update()
+    {
+        if (Player.enabled == false)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                Player.enabled = true;
+            }
+        }
+    }
 }

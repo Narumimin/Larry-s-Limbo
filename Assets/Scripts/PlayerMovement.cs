@@ -6,12 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     public float velocity = 5f; //Velocidad del jugador
     public float jumpVel = 10f; //Velocidad del salto
-    private bool isJumping;
+    private bool isJumping = false;
 
     private Vector2 movement; //Vector para saber la direccion del movimiento del jugador
     private Rigidbody2D rb; //Rigidbody
 
-    public Animator animator; //Animator
+    //public Animator animator; //Animator
 
     public LayerMask GroundLayer; //Detectar objetos con cierta layer puesta
 
@@ -62,10 +62,6 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter = 0f;
             StartCoroutine(JumpCooldown());
         }
-        /*else
-        {
-            movement.x = 0f;
-        }*/
     }
 
     private void FixedUpdate()
@@ -96,5 +92,4 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(groundCheckPoint.position, radius);
     }
-
 }
