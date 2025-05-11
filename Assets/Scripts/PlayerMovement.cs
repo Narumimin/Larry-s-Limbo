@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement; //Vector para saber la direccion del movimiento del jugador
     private Rigidbody2D rb; //Rigidbody
 
-    //public Animator animator; //Animator
+    public Animator animator; //Animator
 
     public LayerMask GroundLayer; //Detectar objetos con cierta layer puesta
 
@@ -33,19 +33,18 @@ public class PlayerMovement : MonoBehaviour
         rb.WakeUp();
         movement.x = Input.GetAxisRaw("Horizontal"); // recibir input de derecha o izquierda
 
-        /*
         if (movement.x < 0)
         {
-            //transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else if (movement.x > 0)
         {
-            //transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
-        //animator.SetBool("onFloor", isGrounded);
-        //animator.SetFloat("movement", movement.x);
-        */
+        animator.SetBool("onFloor", isGrounded());
+        animator.SetFloat("movement", movement.x);
+        
 
         if (isGrounded()) //Coyote time related stuff
         {
