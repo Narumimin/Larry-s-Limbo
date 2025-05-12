@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 4782600478826146581}
   - component: {fileID: 186813088068622272}
   - component: {fileID: 3580099282732651845}
+  - component: {fileID: 1664477461891731584}
   m_Layer: 8
   m_Name: Larry
   m_TagString: Player
@@ -290,6 +291,22 @@ MonoBehaviour:
   damage: 1
   timeBetweenAttacks: 0.3
   isAttacking: 0
+--- !u!114 &1664477461891731584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220327219184514459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97467d0d70e3ff4483e16fe2dd3b058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackClip: {fileID: 8300000, guid: 8e2b2898d88c0f947ae47d273f4fe49e, type: 3}
+  jumpClip: {fileID: 8300000, guid: c1515f3e730179545aacb15dc27769d1, type: 3}
+  deathClip: {fileID: 8300000, guid: 7ebaf00af6ebaf14fb2c6b0a7f29c6f2, type: 3}
+  damageClip: {fileID: 8300000, guid: 98249a9cc2c167b44a7094ff47e81c5a, type: 3}
 --- !u!1 &8938478326293077400
 GameObject:
   m_ObjectHideFlags: 0

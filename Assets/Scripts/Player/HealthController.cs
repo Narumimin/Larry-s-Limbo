@@ -13,6 +13,7 @@ public class HealthController : MonoBehaviour
 
     private PlayerMovement Player;
     public GameObject deathPannel;
+    private Sounds Sounds;
 
     [SerializeField] private Image[] hearts; // pa los corazones meanwhile
     
@@ -23,6 +24,7 @@ public class HealthController : MonoBehaviour
     {
         health = maxHealth;
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>(); // encontrar el game object que es larry
+        Sounds = GameObject.FindGameObjectWithTag("Player").GetComponent<Sounds>();
     }
 
     public void TakeDamage(int damage)
@@ -61,6 +63,9 @@ public class HealthController : MonoBehaviour
     {
         deathPannel.SetActive(true);
         Player.enabled = false;
+        Sounds.death();
+        Time.timeScale = 0;
+        
     }
 
     public void Update()
@@ -69,6 +74,7 @@ public class HealthController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
+                Time.timeScale = 1;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                 Player.enabled = true;
             }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -27,10 +28,7 @@ public class Pause : MonoBehaviour
 
     public void Salir()
     {
-        Application.Quit();
-
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 }

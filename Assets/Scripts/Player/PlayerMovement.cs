@@ -21,10 +21,13 @@ public class PlayerMovement : MonoBehaviour
     private float coyoteTime = 0.1f; //Tiempo que queremos que dure el coyote time
     private float coyoteTimeCounter; //Contador con el que checamos el coyote time
 
+    private Sounds sounds;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sounds = GetComponent<Sounds>();
     }
 
     // Update is called once per frame
@@ -57,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && coyoteTimeCounter > 0f && !isJumping) //jump action
         {
+            sounds.jump();
             Jump();
             coyoteTimeCounter = 0f;
             StartCoroutine(JumpCooldown());

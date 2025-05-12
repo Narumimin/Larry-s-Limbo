@@ -10,13 +10,4 @@ public class AudioManager : MonoBehaviour
     {
         ambientMusic.Play();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.M))
-        {
-            ambientMusic.Pause();
-        }
-    }
 }

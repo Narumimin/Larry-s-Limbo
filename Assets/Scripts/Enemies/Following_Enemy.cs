@@ -75,7 +75,11 @@ public class Following_Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.SetTrigger("Attack");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.SetTrigger("Attack");
+        }
+       
     }
 
     private void OnDrawGizmos() // gizmo para checar el circulo que se usa en la funcion isGrounded

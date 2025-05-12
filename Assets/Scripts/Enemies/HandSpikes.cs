@@ -5,6 +5,7 @@ public class HandSpikes : MonoBehaviour
 {
     private BoxCollider2D BoxCollider2D;
     private bool spikesUp = false;
+    public AudioClip audioClip;
 
     private void Start()
     {
@@ -40,5 +41,9 @@ public class HandSpikes : MonoBehaviour
         yield return new WaitForSeconds(1);
         spikesUp = false;
         
+    }
+    public void HandSpikesAudio()
+    {
+        AudioSource.PlayClipAtPoint(audioClip, transform.position, 0.5f);
     }
 }

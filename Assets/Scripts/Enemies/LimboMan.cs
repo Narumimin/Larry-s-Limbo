@@ -8,10 +8,12 @@ public class LimboMan : MonoBehaviour
     public Transform[] points;
     public Animator animator;
     private int i; //incrementador
+    private LimboEnemiesSounds sounds;
 
     private void Start()
     {
         transform.position = points[startingPoint].position; //Teleporta el objeto al punto inicial
+        sounds = GetComponent<LimboEnemiesSounds>();
     }
 
     void Update()
@@ -62,7 +64,10 @@ public class LimboMan : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        animator.SetTrigger("Attack");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 
 }

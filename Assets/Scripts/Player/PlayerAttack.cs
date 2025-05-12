@@ -12,7 +12,6 @@ public class PlayerAttack : MonoBehaviour
     public bool isAttacking = false;
     private float attackTimeCounter;
 
-
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -23,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) //&& attackTimeCounter >= timeBetweenAttacks)
-        {
+        {            
             attackTimeCounter = 0f;
             Player.animator.SetTrigger("Attacking");
             //Attack();
@@ -33,12 +32,12 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackableLayer);
         foreach (Collider2D hit in hits)
         {
             if (hit.GetComponent<EnemyHealth>() != null)
             {
-                Debug.Log("HIT THE FUCKER");
                 hit.GetComponent<EnemyHealth>().health -= damage;
                 hit.GetComponent<EnemyHealth>().animator.SetTrigger("Damage");
             }
