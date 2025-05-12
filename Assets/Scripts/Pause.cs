@@ -4,7 +4,6 @@ public class Pause : MonoBehaviour
 {
     private bool isPaused = false;
     public GameObject pausePanel;
-    public GameObject pauseButton;
 
     public void TogglePause()
     {
@@ -15,7 +14,6 @@ public class Pause : MonoBehaviour
         if (pausePanel != null)
         {
             pausePanel.SetActive(isPaused);
-            pauseButton.SetActive(!isPaused);
         }
     }
 
@@ -25,5 +23,14 @@ public class Pause : MonoBehaviour
         {
             TogglePause();
         }
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }

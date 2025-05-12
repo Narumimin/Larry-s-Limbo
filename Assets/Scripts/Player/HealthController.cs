@@ -30,6 +30,7 @@ public class HealthController : MonoBehaviour
         if (takingDamage == false)
         {
             health -= damage;
+            Player.animator.SetTrigger("Damage");
             StartCoroutine(DamageCooldown());
             for (int i = 0; i < hearts.Length; i++) // para cambiar el color de corazones
             {

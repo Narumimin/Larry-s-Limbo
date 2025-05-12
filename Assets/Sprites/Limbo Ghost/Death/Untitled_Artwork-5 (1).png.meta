@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 12ad51f0478fa29478d23d2845221a9c
+guid: ba10faf5831d7cd47b00f5a9e8a2b7db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6369879539158651996
-    second: "Ilustracio\u0301n_sin_ti\u0301tulo_0"
+      213: -3069150850074499367
+    second: Untitled_Artwork-5 (1)_0
+  - first:
+      213: 8774222808439358471
+    second: Untitled_Artwork-5 (1)_1
+  - first:
+      213: -3873154539878841406
+    second: Untitled_Artwork-5 (1)_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Ilustracio\u0301n_sin_ti\u0301tulo_0"
+      name: Untitled_Artwork-5 (1)_0
       rect:
         serializedVersion: 2
-        x: 604
-        y: 462
-        width: 920
-        height: 704
+        x: 109
+        y: 95
+        width: 7
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab6b66ee44a997a0800000000000000
-      internalID: -6369879539158651996
+      spriteID: 9d6a83b109f2865d0800000000000000
+      internalID: -3069150850074499367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork-5 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 89
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704882d082d44c970800000000000000
+      internalID: 8774222808439358471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled_Artwork-5 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 80
+        width: 245
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c38452877acf3ac0800000000000000
+      internalID: -3873154539878841406
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Ilustracio\u0301n_sin_ti\u0301tulo_0": -6369879539158651996
+      Untitled_Artwork-5 (1)_0: -3069150850074499367
+      Untitled_Artwork-5 (1)_1: 8774222808439358471
+      Untitled_Artwork-5 (1)_2: -3873154539878841406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

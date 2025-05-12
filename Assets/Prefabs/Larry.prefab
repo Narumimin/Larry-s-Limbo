@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1661427358314030879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2673972655968491969}
+  m_Layer: 8
+  m_Name: Atack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2673972655968491969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661427358314030879}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.532, y: 0.0046024323, z: -0.016838683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2098929158519727719}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8220327219184514459
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,7 +47,8 @@ GameObject:
   - component: {fileID: 4336018745570364744}
   - component: {fileID: 4782600478826146581}
   - component: {fileID: 186813088068622272}
-  m_Layer: 0
+  - component: {fileID: 3580099282732651845}
+  m_Layer: 8
   m_Name: Larry
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -37,6 +69,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8513838733917192188}
+  - {fileID: 2673972655968491969}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2829101361249439404
@@ -88,7 +121,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.53, y: 5.34}
+  m_Size: {x: 1.012, y: 2.136}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -133,7 +166,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.012, y: 2.136}
-    newSize: {x: 2.53, y: 5.34}
+    newSize: {x: 1.012, y: 2.136}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -237,6 +270,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8053a6e4484a9a941b479ef8613547fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3580099282732651845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220327219184514459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14708835e23abc4cb3f6e225772952e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 2673972655968491969}
+  attackRadius: 0.86
+  attackableLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  damage: 1
+  timeBetweenAttacks: 0.3
+  isAttacking: 0
 --- !u!1 &8938478326293077400
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8513838733917192188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
