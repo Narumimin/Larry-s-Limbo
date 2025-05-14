@@ -31999,6 +31999,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4396673206169961163, guid: b5aaa0912fc161f479d8f89eca5502e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6031756171099535410, guid: b5aaa0912fc161f479d8f89eca5502e7, type: 3}
       propertyPath: m_Name
       value: Menu pausa
@@ -32007,6 +32011,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8559079557577061912, guid: b5aaa0912fc161f479d8f89eca5502e7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
