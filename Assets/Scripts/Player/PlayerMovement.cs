@@ -1,12 +1,18 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using Unity.Mathematics;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float velocity = 5f; //Velocidad del jugador
-    public float jumpVel = 10f; //Velocidad del salto
+
+    public float jumpVel; //Velocidad del salto
+    public float jumpHeight = 5f;
+    public float timeToJumpApex = 0.5f;
     private bool isJumping = false;
+    [SerializeField] private float gravity;
+    [SerializeField] private float gravityChange = 1f;
 
     private Vector2 movement; //Vector para saber la direccion del movimiento del jugador
     private Rigidbody2D rb; //Rigidbody
@@ -17,9 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform groundCheckPoint; //Punto donde se dibuja la esfera para checar si el jugador esta en el suelo
     public float radius; //Radio de la esfera mencionada
-
+    
     private float coyoteTime = 0.1f; //Tiempo que queremos que dure el coyote time
     private float coyoteTimeCounter; //Contador con el que checamos el coyote time
+
 
     private Sounds sounds;
 
@@ -28,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sounds = GetComponent<Sounds>();
+        gravity = (2 * jumpHeight) / math.pow(timeToJumpApex, 2);
+        jumpVel = math.abs(gravity) * timeToJumpApex;
+        rb.gravityScale = gravity;
     }
 
     // Update is called once per frame
@@ -47,7 +57,6 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("onFloor", isGrounded());
         animator.SetFloat("movement", movement.x);
-        
 
         if (isGrounded()) //Coyote time related stuff
         {
@@ -79,7 +88,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump() // funcion para saltaar
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpVel);
+        rb.linearVelocityY = jumpVel;
+        //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpVel);
         //animator.SetBool("onFloor", false);
     }
 

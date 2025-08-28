@@ -12,14 +12,6 @@ public class HandSpikes : MonoBehaviour
         BoxCollider2D = GetComponent<BoxCollider2D>();
     }
 
-    private void Update()
-    {
-        if (spikesUp == false)
-        {
-            StartCoroutine(SpikesCooldown());
-        }
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -32,16 +24,15 @@ public class HandSpikes : MonoBehaviour
         }
     }
 
-    private IEnumerator SpikesCooldown() //cooldown para el salto
+    private void SpikesUp()
     {
-        spikesUp = true;
         BoxCollider2D.enabled = true;
-        yield return new WaitForSeconds(1);
-        BoxCollider2D.enabled = false;
-        yield return new WaitForSeconds(1);
-        spikesUp = false;
-        
     }
+    private void SpikesDown()
+    {
+        BoxCollider2D.enabled = false;
+    }
+
     public void HandSpikesAudio()
     {
         AudioSource.PlayClipAtPoint(audioClip, transform.position, 0.5f);

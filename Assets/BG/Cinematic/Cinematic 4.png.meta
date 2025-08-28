@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cinematic 4_0: 4059085167014610209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
