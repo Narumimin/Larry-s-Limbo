@@ -39,6 +39,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2.unity
     guid: bad88c1b719f5fd458fc19408a4a8667
   - enabled: 1
+    path: Assets/Scenes/Bos phase 1.unity
+    guid: 03592b154c2b50e4e9eedbca4144fe42
+  - enabled: 1
+    path: Assets/Scenes/Bos phase 2.unity
+    guid: e93d4fea51623ab489155f6d149e3283
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 927f9490282ccc64b851e588ba0226ea
   m_configObjects:

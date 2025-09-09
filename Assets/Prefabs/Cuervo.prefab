@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 3908493330190169699}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.97, y: -1.7, z: 0}
+  m_LocalPosition: {x: 7.140069, y: 1.4331335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd3ad50aaee5514589f8cfe34410971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 8
   Player: {fileID: 0}
   attackClip: {fileID: 8300000, guid: dfbc154b60adfd1448b76e676d5d40c8, type: 3}
 --- !u!58 &3497217897720592296
@@ -139,4 +139,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 0.35

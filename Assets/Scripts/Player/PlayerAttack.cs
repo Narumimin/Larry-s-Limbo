@@ -6,7 +6,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPoint;
     public float attackRadius = 1;
     public LayerMask attackableLayer;
-    public float damage = 1f;
+    public int damage = 1;
     public float timeBetweenAttacks = 0.3f;
     private PlayerMovement Player;
     public bool isAttacking = false;
@@ -21,8 +21,13 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) //&& attackTimeCounter >= timeBetweenAttacks)
-        {            
+        if (Player.isCrouching == true)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.J)) //&& attackTimeCounter >= timeBetweenAttacks)
+        {
             attackTimeCounter = 0f;
             Player.animator.SetTrigger("Attacking");
             //Attack();
@@ -32,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
-        
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackableLayer);
         foreach (Collider2D hit in hits)
         {
@@ -41,6 +46,12 @@ public class PlayerAttack : MonoBehaviour
                 hit.GetComponent<EnemyHealth>().health -= damage;
                 hit.GetComponent<EnemyHealth>().animator.SetTrigger("Damage");
             }
+            else if (hit.GetComponent<BossHealth>() != null)
+            {
+                hit.GetComponent<BossHealth>().health -= damage;
+                hit.GetComponent<BossHealth>().animator.SetTrigger("Damage");
+            }
+
         }
     }
 

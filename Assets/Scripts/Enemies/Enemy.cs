@@ -15,7 +15,6 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        speed = 8f;
     }
 
     // Update is called once per frame
@@ -44,8 +43,8 @@ public class Enemy : MonoBehaviour
     {
         isSpawned = true;
         yield return new WaitForSeconds(2f);
-        gameObject.SetActive(false);
         isSpawned = false;
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerStay2D(Collider2D collision)

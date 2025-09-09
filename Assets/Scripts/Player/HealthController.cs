@@ -38,11 +38,11 @@ public class HealthController : MonoBehaviour
             {
                 if (i < health)
                 {
-                    hearts[i].color = Color.red;
+                    hearts[i].enabled = true;
                 }
                 else
                 {
-                    hearts[i].color = Color.black;
+                    hearts[i].enabled = false;
                 }
             }
             if (health <= 0)
