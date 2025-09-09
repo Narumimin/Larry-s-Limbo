@@ -38,27 +38,6 @@ public class BossHealth : MonoBehaviour
             //animator.SetTrigger("Dead");
             Die();
         }
-
-        if (health == 20)
-        {
-            spriteRenderer.sprite = sprite1;
-        }
-
-        if (health == 15)
-        {
-            spriteRenderer.sprite = sprite2;
-        }
-
-        if (health == 10)
-        {
-            spriteRenderer.sprite = sprite3;
-        }
-
-        if (health == 5)
-        {
-            spriteRenderer.sprite = sprite4;
-        }
-
     }
 
     private void healthCheck()

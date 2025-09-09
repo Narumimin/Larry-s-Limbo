@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 87119bfe7b609bd468af06d55d5148f5
+guid: b99e8d68881b71744890a1052557c376
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6256900817672150730
-    second: FA_IDLE (4)_0
+      213: 5193598113012770752
+    second: FA_IDLE-2_0
   - first:
-      213: -5996669465746210701
-    second: FA_IDLE (4)_1
+      213: -8954334509547874581
+    second: FA_IDLE-2_1
   - first:
-      213: -3530630310838798995
-    second: FA_IDLE (4)_2
+      213: 5999591343927191212
+    second: FA_IDLE-2_2
   - first:
-      213: -3766194388006521606
-    second: FA_IDLE (4)_3
+      213: -8754771367877870569
+    second: FA_IDLE-2_3
+  - first:
+      213: 4673408320310741446
+    second: FA_IDLE-2_4
+  - first:
+      213: -3574632493818185832
+    second: FA_IDLE-2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -59,7 +65,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.5, y: 0.17}
+  spritePivot: {x: 0.7, y: 0.25}
   spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -122,35 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FA_IDLE (4)_0
+      name: FA_IDLE-2_0
       rect:
         serializedVersion: 2
-        x: 417
-        y: 27
-        width: 1637
-        height: 1767
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 631ecc75bd50b29a0800000000000000
-      internalID: -6256900817672150730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FA_IDLE (4)_1
-      rect:
-        serializedVersion: 2
-        x: 779
+        x: 989
         y: 40
-        width: 11
-        height: 7
+        width: 1080
+        height: 1565
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37004c284ec87cca0800000000000000
-      internalID: -5996669465746210701
+      spriteID: 0c7e34887fd531840800000000000000
+      internalID: 5193598113012770752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FA_IDLE (4)_2
+      name: FA_IDLE-2_1
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 32
-        width: 8
-        height: 9
+        x: 2124
+        y: 853
+        width: 18
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,19 +165,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d65f939307ea00fc0800000000000000
-      internalID: -3530630310838798995
+      spriteID: be69066a430dbb380800000000000000
+      internalID: -8954334509547874581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FA_IDLE (4)_3
+      name: FA_IDLE-2_2
       rect:
         serializedVersion: 2
-        x: 1246
-        y: 39
-        width: 12
+        x: 2068
+        y: 91
+        width: 20
         height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,8 +187,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af43dc3882acbbbc0800000000000000
-      internalID: -3766194388006521606
+      spriteID: ca6e9444a84d24350800000000000000
+      internalID: 5999591343927191212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-2_3
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 97
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cf0ef53ddc08680800000000000000
+      internalID: -8754771367877870569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-2_4
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 73
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c90a764b184bd040800000000000000
+      internalID: 4673408320310741446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-2_5
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 50
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897f563afaa546ec0800000000000000
+      internalID: -3574632493818185832
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FA_IDLE (4)_0: -6256900817672150730
-      FA_IDLE (4)_1: -5996669465746210701
-      FA_IDLE (4)_2: -3530630310838798995
-      FA_IDLE (4)_3: -3766194388006521606
+      FA_IDLE-2_0: 5193598113012770752
+      FA_IDLE-2_1: -8954334509547874581
+      FA_IDLE-2_2: 5999591343927191212
+      FA_IDLE-2_3: -8754771367877870569
+      FA_IDLE-2_4: 4673408320310741446
+      FA_IDLE-2_5: -3574632493818185832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

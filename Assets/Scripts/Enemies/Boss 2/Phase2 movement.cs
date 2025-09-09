@@ -82,6 +82,7 @@ public class Phase2Movement : MonoBehaviour
             }
                 moving = false;
             ramAttacking = false;
+            animator.SetBool("ram", false);
             if (attacking == false)
             {
                 StartCoroutine(Attacking(9));
@@ -116,11 +117,13 @@ public class Phase2Movement : MonoBehaviour
         sounds.ramAttack();
         yield return new WaitForSeconds(timeAttack);
         ramAttacking = true;
+        animator.SetBool("ram", true);
     }
 
 
     private IEnumerator RawrAttack(float timeAttack)
     {
+        animator.SetTrigger("lion");
         sounds.rawrAttack();
         attacking = true;
         yield return new WaitForSeconds(timeAttack);
@@ -181,6 +184,7 @@ public class Phase2Movement : MonoBehaviour
         sounds.ramAttack();
 
         yield return new WaitForSeconds(1.5f);
+        animator.SetBool("ram", true);
 
         attacking = false;
     }

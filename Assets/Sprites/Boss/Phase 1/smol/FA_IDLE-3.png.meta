@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 87119bfe7b609bd468af06d55d5148f5
+guid: 61df69e8d178e6047ae82ed4b6c69c29
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6256900817672150730
-    second: FA_IDLE (4)_0
+      213: 6028570610200307404
+    second: FA_IDLE-3_0
   - first:
-      213: -5996669465746210701
-    second: FA_IDLE (4)_1
+      213: -1614082319734170760
+    second: FA_IDLE-3_1
   - first:
-      213: -3530630310838798995
-    second: FA_IDLE (4)_2
-  - first:
-      213: -3766194388006521606
-    second: FA_IDLE (4)_3
+      213: 6298612063685238655
+    second: FA_IDLE-3_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -59,7 +56,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 9
-  spritePivot: {x: 0.5, y: 0.17}
+  spritePivot: {x: 0.7, y: 0.25}
   spritePixelsToUnits: 500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -122,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FA_IDLE (4)_0
+      name: FA_IDLE-3_0
       rect:
         serializedVersion: 2
-        x: 417
-        y: 27
-        width: 1637
-        height: 1767
+        x: 877
+        y: 979
+        width: 7
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 631ecc75bd50b29a0800000000000000
-      internalID: -6256900817672150730
+      spriteID: cc6695c7709c9a350800000000000000
+      internalID: 6028570610200307404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FA_IDLE (4)_1
+      name: FA_IDLE-3_1
       rect:
         serializedVersion: 2
-        x: 779
-        y: 40
-        width: 11
-        height: 7
+        x: 879
+        y: 664
+        width: 264
+        height: 507
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37004c284ec87cca0800000000000000
-      internalID: -5996669465746210701
+      spriteID: 87b91069ea0a999e0800000000000000
+      internalID: -1614082319734170760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FA_IDLE (4)_2
+      name: FA_IDLE-3_2
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 32
-        width: 8
-        height: 9
+        x: 986
+        y: 51
+        width: 1024
+        height: 1546
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,30 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d65f939307ea00fc0800000000000000
-      internalID: -3530630310838798995
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FA_IDLE (4)_3
-      rect:
-        serializedVersion: 2
-        x: 1246
-        y: 39
-        width: 12
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af43dc3882acbbbc0800000000000000
-      internalID: -3766194388006521606
+      spriteID: f7fd2f9ec4a296750800000000000000
+      internalID: 6298612063685238655
       vertices: []
       indices: 
       edges: []
@@ -223,10 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FA_IDLE (4)_0: -6256900817672150730
-      FA_IDLE (4)_1: -5996669465746210701
-      FA_IDLE (4)_2: -3530630310838798995
-      FA_IDLE (4)_3: -3766194388006521606
+      FA_IDLE-3_0: 6028570610200307404
+      FA_IDLE-3_1: -1614082319734170760
+      FA_IDLE-3_2: 6298612063685238655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

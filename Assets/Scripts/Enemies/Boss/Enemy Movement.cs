@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
     public GameObject BeegBeam6;
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D boxCollider2D;
-    //public Animator animator;
+    public Animator animator;
     private int i; //incrementador
     private Boss1Sounds sounds;
 
@@ -33,6 +33,7 @@ public class EnemyMovement : MonoBehaviour
         currentPoint = startingPoint;
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider2D = GetComponent<BoxCollider2D>();
+        
         //sounds = GetComponent<EnemySounds>();
     }
 
@@ -108,6 +109,7 @@ public class EnemyMovement : MonoBehaviour
         
         yield return new WaitForSeconds(1.5f);
         sounds.smolAttack();
+        animator.SetTrigger("smol");
         yield return new WaitForSeconds(0.5f);
 
         GameObject skinny = Instantiate(skinnyBeam);
@@ -137,6 +139,7 @@ public class EnemyMovement : MonoBehaviour
         StartCoroutine(BeegBeamAttack(2f));
 
         yield return new WaitForSeconds(2.5f);
+        animator.SetTrigger("smol");
         sounds.smolAttack();
         yield return new WaitForSeconds(0.5f);
 
