@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: fb1589471eb44d942ae06a3250b849fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6735572795120137629
+    second: FA_IDLE-7_0
+  - first:
+      213: -3323909651393962867
+    second: FA_IDLE-7_1
+  - first:
+      213: -8170945643067742149
+    second: FA_IDLE-7_2
+  - first:
+      213: 1653946576106417110
+    second: FA_IDLE-7_3
+  - first:
+      213: -1596666094316571614
+    second: FA_IDLE-7_4
+  - first:
+      213: 8295273333339842017
+    second: FA_IDLE-7_5
+  - first:
+      213: -6148763194858318325
+    second: FA_IDLE-7_6
+  - first:
+      213: -7351772721765799358
+    second: FA_IDLE-7_7
+  - first:
+      213: 723311882574834803
+    second: FA_IDLE-7_8
+  - first:
+      213: 5789169181093058916
+    second: FA_IDLE-7_9
+  - first:
+      213: -1959636794997017733
+    second: FA_IDLE-7_10
+  - first:
+      213: -9080874623878680091
+    second: FA_IDLE-7_11
+  - first:
+      213: -3586800070095150844
+    second: FA_IDLE-7_12
+  - first:
+      213: 648078285299261654
+    second: FA_IDLE-7_13
+  - first:
+      213: 4377365657416155082
+    second: FA_IDLE-7_14
+  - first:
+      213: 5219253600043412447
+    second: FA_IDLE-7_15
+  - first:
+      213: 744083316786305534
+    second: FA_IDLE-7_16
+  - first:
+      213: -8665203902638850298
+    second: FA_IDLE-7_17
+  - first:
+      213: 3751741545832514096
+    second: FA_IDLE-7_18
+  - first:
+      213: 4941304769341674335
+    second: FA_IDLE-7_19
+  - first:
+      213: -5250282012767623147
+    second: FA_IDLE-7_20
+  - first:
+      213: -200455048663947367
+    second: FA_IDLE-7_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.7, y: 0.25}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FA_IDLE-7_0
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 836
+        width: 153
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95bbe345cf897d50800000000000000
+      internalID: 6735572795120137629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_1
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1095
+        width: 9
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c9b2b68c91fd1d0800000000000000
+      internalID: -3323909651393962867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_2
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 50
+        width: 855
+        height: 1560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38ebe9aa38fa9e80800000000000000
+      internalID: -8170945643067742149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_3
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 907
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dbeb42e5aff3f610800000000000000
+      internalID: 1653946576106417110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_4
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 888
+        width: 38
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224b95f85a087d9e0800000000000000
+      internalID: -1596666094316571614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_5
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 891
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5ed7c752bbe1370800000000000000
+      internalID: 8295273333339842017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_6
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 883
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06597aa3743baaa0800000000000000
+      internalID: -6148763194858318325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_7
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 834
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a2eb139a149f990800000000000000
+      internalID: -7351772721765799358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_8
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 674
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c21be2358b90a00800000000000000
+      internalID: 723311882574834803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_9
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 283
+        width: 50
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469d0b7a2b2475050800000000000000
+      internalID: 5789169181093058916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_10
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 212
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73fa61b7b8fdc4e0800000000000000
+      internalID: -1959636794997017733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_11
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 85
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e13ad164a04af180800000000000000
+      internalID: -9080874623878680091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_12
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 138
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401e1a50750293ec0800000000000000
+      internalID: -3586800070095150844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_13
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 67
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d028ed44cf6ef800800000000000000
+      internalID: 648078285299261654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_14
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 107
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acfb8468fd68fbc30800000000000000
+      internalID: 4377365657416155082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_15
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 95
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb24471f738e6840800000000000000
+      internalID: 5219253600043412447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_16
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 91
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef9975495d3835a00800000000000000
+      internalID: 744083316786305534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_17
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 50
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ff1e4f5f20fb780800000000000000
+      internalID: -8665203902638850298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_18
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 51
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0320c60fe0dd01430800000000000000
+      internalID: 3751741545832514096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_19
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 55
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53dd8fe18a039440800000000000000
+      internalID: 4941304769341674335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_20
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 4
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518ec5a93504327b0800000000000000
+      internalID: -5250282012767623147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FA_IDLE-7_21
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 7
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997a3fef137d73df0800000000000000
+      internalID: -200455048663947367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FA_IDLE-7_0: 6735572795120137629
+      FA_IDLE-7_1: -3323909651393962867
+      FA_IDLE-7_10: -1959636794997017733
+      FA_IDLE-7_11: -9080874623878680091
+      FA_IDLE-7_12: -3586800070095150844
+      FA_IDLE-7_13: 648078285299261654
+      FA_IDLE-7_14: 4377365657416155082
+      FA_IDLE-7_15: 5219253600043412447
+      FA_IDLE-7_16: 744083316786305534
+      FA_IDLE-7_17: -8665203902638850298
+      FA_IDLE-7_18: 3751741545832514096
+      FA_IDLE-7_19: 4941304769341674335
+      FA_IDLE-7_2: -8170945643067742149
+      FA_IDLE-7_20: -5250282012767623147
+      FA_IDLE-7_21: -200455048663947367
+      FA_IDLE-7_3: 1653946576106417110
+      FA_IDLE-7_4: -1596666094316571614
+      FA_IDLE-7_5: 8295273333339842017
+      FA_IDLE-7_6: -6148763194858318325
+      FA_IDLE-7_7: -7351772721765799358
+      FA_IDLE-7_8: 723311882574834803
+      FA_IDLE-7_9: 5789169181093058916
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
